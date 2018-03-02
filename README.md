@@ -14,3 +14,12 @@ with the last command the project will execute in chrome, if you want to run the
 **mvn clean verify -Dwebdriver.driver={browserName}**
 
 the supported browsers are chrome and firefox.
+
+#CI
+
+This project uses travis as CI system. 
+
+# Reports
+
+The reports of the project are hosted in githun usin Github pages, can be found in https://ricardorlg.github.io/BellatrixTestInterview/index.html
+
