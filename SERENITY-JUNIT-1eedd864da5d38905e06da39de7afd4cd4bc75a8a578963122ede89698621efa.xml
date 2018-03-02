@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="3" name="com.example.bellatrix.interview.ricardo.features.filter_results.FilterProductsStory" skipped="0" tests="3" time="79.16" timestamp="2018-03-02T09:03:40.090Z[UTC]"><testcase classname="com.example.bellatrix.interview.ricardo.features.filter_results.FilterProductsStory" name="Filter results by brand"><failure message="Missing filter 'Filter [filterName=Brand, filterKey=Puma]' - &#10;Expected: an element that is visible&#10;     but: no matching element found by css: [aria-label='PUMA'] was not visible" type="com.example.bellatrix.interview.ricardo.tasks.exceptions.NoMatchingFilterOptionIsVisible">Missing filter 'Filter [filterName=Brand, filterKey=Puma]' - 
+Expected: an element that is visible
+     but: no matching element found by css: [aria-label='PUMA'] was not visible</failure><system-err>Missing filter 'Filter [filterName=Brand, filterKey=Puma]' - 
+Expected: an element that is visible
+     but: no matching element found by css: [aria-label='PUMA'] was not visible
+com.example.bellatrix.interview.ricardo.tasks.FilterByEbayFilter.performAs(FilterByEbayFilter.java:31)
+com.example.bellatrix.interview.ricardo.features.filter_results.FilterProductsStory.filter_results_by_brand(FilterProductsStory.java:51)
+</system-err></testcase><testcase classname="com.example.bellatrix.interview.ricardo.features.filter_results.FilterProductsStory" name="Filter results by size"><failure message="Missing filter 'Filter [filterName=shoes size, filterKey=10]' - &#10;Expected: an element that is visible&#10;     but: no matching element found by css: [aria-label='10'] was not visible" type="com.example.bellatrix.interview.ricardo.tasks.exceptions.NoMatchingFilterOptionIsVisible">Missing filter 'Filter [filterName=shoes size, filterKey=10]' - 
+Expected: an element that is visible
+     but: no matching element found by css: [aria-label='10'] was not visible</failure><system-err>Missing filter 'Filter [filterName=shoes size, filterKey=10]' - 
+Expected: an element that is visible
+     but: no matching element found by css: [aria-label='10'] was not visible
+com.example.bellatrix.interview.ricardo.tasks.FilterByEbayFilter.performAs(FilterByEbayFilter.java:31)
+com.example.bellatrix.interview.ricardo.features.filter_results.FilterProductsStory.filter_results_by_size(FilterProductsStory.java:60)
+</system-err></testcase><testcase classname="com.example.bellatrix.interview.ricardo.features.filter_results.FilterProductsStory" name="Filter results by brand and size"><failure message="Missing filter 'Filter [filterName=Brand, filterKey=Puma]' - &#10;Expected: an element that is visible&#10;     but: no matching element found by css: [aria-label='PUMA'] was not visible" type="com.example.bellatrix.interview.ricardo.tasks.exceptions.NoMatchingFilterOptionIsVisible">Missing filter 'Filter [filterName=Brand, filterKey=Puma]' - 
+Expected: an element that is visible
+     but: no matching element found by css: [aria-label='PUMA'] was not visible</failure><system-err>Missing filter 'Filter [filterName=Brand, filterKey=Puma]' - 
+Expected: an element that is visible
+     but: no matching element found by css: [aria-label='PUMA'] was not visible
+com.example.bellatrix.interview.ricardo.tasks.FilterByEbayFilter.performAs(FilterByEbayFilter.java:31)
+com.example.bellatrix.interview.ricardo.features.filter_results.FilterProductsStory.filter_results_by_brand_and_size(FilterProductsStory.java:69)
+</system-err></testcase></testsuite>
