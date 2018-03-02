@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Filter products story","Filter results by brand","FAILURE","2018-03-02T09:03:40.09Z[UTC]","0.0","37.06"
-"Filter products story","Filter results by size","FAILURE","2018-03-02T09:04:17.785Z[UTC]","0.0","21.0"
-"Filter products story","Filter results by brand and size","FAILURE","2018-03-02T09:04:38.855Z[UTC]","0.0","21.1"
+"Filter products story","Filter results by brand","FAILURE","2018-03-02T09:13:36.338Z[UTC]","0.0","36.34"
+"Filter products story","Filter results by size","FAILURE","2018-03-02T09:14:13.515Z[UTC]","0.0","19.54"
+"Filter products story","Filter results by brand and size","ERROR","2018-03-02T09:14:33.114Z[UTC]","0.0","304.69"

@@ -53,15 +53,15 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 0.285714],
+                ['Passing', 0.428571],
                 
                 ['Pending', 0],
                 
                 ['Ignored/Skipped', 0],
                 
-                ['Failing', 0.714286],
+                ['Failing', 0.428571],
                 
-                ['Errors',  0],
+                ['Errors',  0.142857],
                 ['Compromised',  0]
             ]
         ], {
@@ -92,26 +92,26 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '2 / 7 tests passed' },
+                {label: '3 / 7 tests passed' },
                 {label: '0 / 7 tests pending'},
                 {label: '0 / 7 tests not executed'},
-                {label: '5 / 7 tests failed'},
-                {label: '0 / 7 errors'},
+                {label: '3 / 7 tests failed'},
+                {label: '1 / 7 errors'},
                 {label: '0 / 7 compromised tests'}
             ]
         });
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 0.246575],
+                ['Passing', 0.418919],
                 
                 ['Pending', 0],
                 
                 ['Ignored', 0],
                 
-                ['Failing', 0.753425],
+                ['Failing', 0.432432],
                 
-                ['Errors', 0],
+                ['Errors', 0.148649],
                 ['Compromised', 0],
             ]
         ], {
@@ -143,11 +143,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '2 / 7 tests passed (0.246575% of all test steps)' },
+                {label: '3 / 7 tests passed (0.418919% of all test steps)' },
                 {label: '0 / 7 tests pending'},
                 {label: '0 / 7 tests not executed'},
-                {label: '5 / 7 tests failed (0.753425% of all test steps)'},
-                {label: '0 / 7 errors (0% of all test steps)'}
+                {label: '3 / 7 tests failed (0.432432% of all test steps)'},
+                {label: '1 / 7 errors (0.148649% of all test steps)'}
             ]
         });
 
@@ -219,7 +219,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-03-2018 09:08</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-03-2018 09:19</span>
     <br style="clear:left"/>
 </div>
 <div class="clr"></div>
@@ -238,23 +238,24 @@
                 <div>
 
                     <span class="test-count"> |
-                        2
+                        3
                             <a href="fcf0bfedf286f4a6c309e9cad2382a8f35991fab572a1faacb195bdeaa2cd5c5.html">passed</a>
                         
                     </span>
                     <span class="test-count"> |
-                        5
+                        4
                             <a href="c4c9003a31b63c303535e428210f1524889c2dfa2d95933fc64e7ba003602c55.html">unsuccessful</a>
                         
                     </span>(
                     <span class="test-count">
-                        5
+                        3
                             <a href="30ecd7c2ab9b25234e7bacdc28e1aa2cf432ef945265e5dd0300929d07de01a9.html">failed</a>
                         ,
                     </span>
                     <span class="test-count">
-                        0
-errors
+                        1
+                            <a href="267664f30935db6be8046a492323056c7e114248f695c5208a62ec0f298495d5.html">with errors</a>
+                        
                     </span>)
 
                 
@@ -307,8 +308,8 @@ errors
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>7</td>
-            <td>2 (29%)</td>
-            <td>5 (71%)</td>
+            <td>3 (43%)</td>
+            <td>4 (57%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -323,14 +324,14 @@ errors
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>7</td>
-            <td>2 (29%)</td>
-            <td>5 (71%)</td>
+            <td>3 (43%)</td>
+            <td>4 (57%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">3 minutes 44 seconds</td>
+                <td colspan="5">8 minutes 23 seconds</td>
         </tr>
         </body>
     </table>
@@ -353,7 +354,7 @@ errors
                     <table>
                         <tr>
                             <td colspan="2">
-                                <span class="caption">Test results weighted by test size in steps (average steps per test: 10) .</span>
+                                <span class="caption">Test results weighted by test size in steps (average steps per test: 11) .</span>
                                 <span class="togglePieChart" id="toggleWeightedPieChart"><a href="#">Show/Hide Pie
                                     Chart</a></span>
                             </td>
@@ -386,8 +387,8 @@ errors
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>7</td>
-            <td>2 (29%)</td>
-            <td>5 (71%)</td>
+            <td>3 (43%)</td>
+            <td>4 (57%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -402,14 +403,14 @@ errors
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>7</td>
-            <td>2 (29%)</td>
-            <td>5 (71%)</td>
+            <td>3 (43%)</td>
+            <td>4 (57%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">3 minutes 44 seconds</td>
+                <td colspan="5">8 minutes 23 seconds</td>
         </tr>
         </body>
     </table>
@@ -471,9 +472,9 @@ errors
                                 <td class="FAILURE-text">8</td>
 
 
-                                <td class="FAILURE-text" data-sort="2018-03-02 09:03:40">09:03:40</td>
+                                <td class="FAILURE-text" data-sort="2018-03-02 09:13:36">09:13:36</td>
 
-                                <td class="FAILURE-text">37.06</td>
+                                <td class="FAILURE-text">36.34</td>
                             </tr>
 
                             <tr class="test-FAILURE">
@@ -494,32 +495,32 @@ errors
                                 <td class="FAILURE-text">8</td>
 
 
-                                <td class="FAILURE-text" data-sort="2018-03-02 09:04:17">09:04:17</td>
+                                <td class="FAILURE-text" data-sort="2018-03-02 09:14:13">09:14:13</td>
 
-                                <td class="FAILURE-text">21</td>
+                                <td class="FAILURE-text">19.54</td>
                             </tr>
 
-                            <tr class="test-FAILURE">
-                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">FAILURE</span></td>
-                                <td class="FAILURE-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="6a3d2fb95fd393fa28fc1bdd7732c239a0519d215f71e4ef54e27483add3c18e.html" class="ellipsis"
-                                           title="Filter results by brand and size No matching filter option is visible:...">
+                                           title="Filter results by brand and size Timeout exception: The following erro...">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Filter results by brand and size
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="FAILURE-text">11</td>
+                                <td class="ERROR-text">11</td>
 
 
-                                <td class="FAILURE-text" data-sort="2018-03-02 09:04:38">09:04:38</td>
+                                <td class="ERROR-text" data-sort="2018-03-02 09:14:33">09:14:33</td>
 
-                                <td class="FAILURE-text">21.1</td>
+                                <td class="ERROR-text">304.69</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -540,32 +541,32 @@ errors
                                 <td class="SUCCESS-text">5</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-02 09:03:39">09:03:39</td>
+                                <td class="SUCCESS-text" data-sort="2018-03-02 09:13:36">09:13:36</td>
 
-                                <td class="SUCCESS-text">29.81</td>
+                                <td class="SUCCESS-text">28.49</td>
                             </tr>
 
-                            <tr class="test-FAILURE">
-                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                                     
-                                    <span style="display:none">FAILURE</span></td>
-                                <td class="FAILURE-text">
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
                                         <a href="775739ba2754fcea9c4284d455895ec6c89c7fdc6229bd3cf3beb78048353a35.html" class="ellipsis"
-                                           title="Order results by descendant price Assertion error: Expected: an element...">
+                                           title="Order results by descendant price ">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Order results by descendant price
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="FAILURE-text">12</td>
+                                <td class="SUCCESS-text">13</td>
 
 
-                                <td class="FAILURE-text" data-sort="2018-03-02 09:03:39">09:03:39</td>
+                                <td class="SUCCESS-text" data-sort="2018-03-02 09:13:36">09:13:36</td>
 
-                                <td class="FAILURE-text">45.57</td>
+                                <td class="SUCCESS-text">58.81</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -586,9 +587,9 @@ errors
                                 <td class="SUCCESS-text">13</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-02 09:04:26">09:04:26</td>
+                                <td class="SUCCESS-text" data-sort="2018-03-02 09:14:36">09:14:36</td>
 
-                                <td class="SUCCESS-text">43.1</td>
+                                <td class="SUCCESS-text">30.79</td>
                             </tr>
 
                             <tr class="test-FAILURE">
@@ -609,9 +610,9 @@ errors
                                 <td class="FAILURE-text">16</td>
 
 
-                                <td class="FAILURE-text" data-sort="2018-03-02 09:05:09">09:05:09</td>
+                                <td class="FAILURE-text" data-sort="2018-03-02 09:15:07">09:15:07</td>
 
-                                <td class="FAILURE-text">26.37</td>
+                                <td class="FAILURE-text">24.5</td>
                             </tr>
                         </tbody>
                     </table>
