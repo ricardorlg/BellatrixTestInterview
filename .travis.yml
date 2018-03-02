@@ -19,7 +19,6 @@ before_script:
   - cd ricardo
 script: 
   - mvn clean test-compile failsafe:integration-test -Dcontext=chrome -Dwebdriver.driver=chrome
-  - mvn test-compile failsafe:integration-test -Dcontext=firefox -Dwebdriver.driver=firefox
   - mvn serenity:aggregate
 
 deploy:
