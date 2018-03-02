@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Search products story","Search results should show the search term in the results text","SUCCESS","2018-03-02T09:13:36.411Z[UTC]","0.0","28.49"
-"Sort results story","Order results by descendant price","SUCCESS","2018-03-02T09:13:36.466Z[UTC]","0.0","58.81"
-"Sort results story","Order results by ascendant price","SUCCESS","2018-03-02T09:14:36.185Z[UTC]","0.0","30.79"
+"Search products story","Search results should show the search term in the results text","SUCCESS","2018-03-02T09:30:15.575Z[UTC]","0.0","32.35"
+"Sort results story","Order results by descendant price","SUCCESS","2018-03-02T09:30:15.422Z[UTC]","0.0","60.39"
+"Sort results story","Order results by ascendant price","SUCCESS","2018-03-02T09:31:16.544Z[UTC]","0.0","39.28"
