@@ -28,7 +28,7 @@ public class SearchProductsStory {
 	private Actor ricardo = Actor.named("Ricardo");
 
 	@Managed
-	public WebDriver hisBrowser;
+	private WebDriver hisBrowser;
 
 	@Before
 	public void ricardoCanBrowseTheWeb() {
@@ -44,9 +44,5 @@ public class SearchProductsStory {
 		then(ricardo).should(eventually(seeThat(totalResultsInPage(), containsString(searchKeyWord))));
 
 	}
-
-
-
-	
 
 }

@@ -27,6 +27,7 @@ import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
+
 @RunWith(SerenityRunner.class)
 
 public class SortResultsStory {
@@ -38,7 +39,7 @@ public class SortResultsStory {
 	private Actor ricardo = Actor.named("Ricardo");
 
 	@Managed
-	public WebDriver hisBrowser;
+	private WebDriver hisBrowser;
 
 	@Before
 	public void ricardoCanBrowseTheWeb() {
@@ -50,32 +51,24 @@ public class SortResultsStory {
 	@Test
 	public void order_results_by_ascendant_price() {
 		when(ricardo).attemptsTo(Search.forTheTerm(searchKeyWord));
-		and(ricardo).has(
-				customizeResultsView(), 
-				orderResultsBy(OrderCriterias.ASCENDANT_PRICE));
-		then(ricardo).should(
-				seeThat("The displayed Products",displayedProductsByLimit(RESULTS_LIMIT), areSortedByAscendantPrice()));
+		and(ricardo).has(customizeResultsView(), orderResultsBy(OrderCriterias.ASCENDANT_PRICE));
+		then(ricardo).should(seeThat("The displayed Products", displayedProductsByLimit(RESULTS_LIMIT),
+				areSortedByAscendantPrice()));
 
 	}
 
 	@Test
 	public void order_results_by_descendant_price() {
 		when(ricardo).attemptsTo(Search.forTheTerm(searchKeyWord));
-		and(ricardo).has(
-				customizeResultsView(), 
-				orderResultsBy(OrderCriterias.DESCENDANT_PRICE));
-		then(ricardo).should(
-				seeThat(displayedProductsByLimit(RESULTS_LIMIT), areSortedByDescendantPrice()));
+		and(ricardo).has(customizeResultsView(), orderResultsBy(OrderCriterias.DESCENDANT_PRICE));
+		then(ricardo).should(seeThat(displayedProductsByLimit(RESULTS_LIMIT), areSortedByDescendantPrice()));
 	}
+
 	@Test
 	public void order_filter_results() {
 		when(ricardo).attemptsTo(Search.forTheTerm(searchKeyWord));
-		and(ricardo).has(
-				customizeResultsView(), 
-				filterByEbayFilter(brandFilter),
-				filterByEbayFilter(sizeFilter),
+		and(ricardo).has(customizeResultsView(), filterByEbayFilter(brandFilter), filterByEbayFilter(sizeFilter),
 				orderResultsBy(OrderCriterias.DESCENDANT_PRICE));
-		then(ricardo).should(
-				seeThat(displayedProductsByLimit(RESULTS_LIMIT), areSortedByDescendantPrice()));
+		then(ricardo).should(seeThat(displayedProductsByLimit(RESULTS_LIMIT), areSortedByDescendantPrice()));
 	}
 }

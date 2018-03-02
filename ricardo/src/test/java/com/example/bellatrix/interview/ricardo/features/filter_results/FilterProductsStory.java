@@ -36,47 +36,39 @@ public class FilterProductsStory {
 	private Actor ricardo = Actor.named("Ricardo");
 
 	@Managed
-	public WebDriver hisBrowser;
+	private WebDriver hisBrowser;
 
 	@Before
 	public void ricardoCanBrowseTheWeb() {
 		givenThat(ricardo).can(BrowseTheWeb.with(hisBrowser));
-		
+
 	}
-	
+
 	@Test
 	public void filter_results_by_brand() {
 		givenThat(ricardo).wasAbleTo(openTheApplication());
 		when(ricardo).attemptsTo(Search.forTheTerm(searchKeyWord));
-		and(ricardo).attemptsTo(
-				filterByEbayFilter(brandFilter));
-		then(ricardo).should(eventually(
-				seeThat(totalResultsInPage(), containsString(searchKeyWord))),
-				seeThat(numberOfFilterApplied(), is(1)), 
-				seeThat(isEbayFilterApplied(brandFilter)));
+		and(ricardo).attemptsTo(filterByEbayFilter(brandFilter));
+		then(ricardo).should(eventually(seeThat(totalResultsInPage(), containsString(searchKeyWord))),
+				seeThat(numberOfFilterApplied(), is(1)), seeThat(isEbayFilterApplied(brandFilter)));
 	}
+
 	@Test
 	public void filter_results_by_size() {
 		givenThat(ricardo).wasAbleTo(openTheApplication());
 		when(ricardo).attemptsTo(Search.forTheTerm(searchKeyWord));
-		and(ricardo).attemptsTo( 
-				filterByEbayFilter(sizeFilter));
-		then(ricardo).should(eventually(
-				seeThat(totalResultsInPage(), containsString(searchKeyWord))),
-				seeThat(numberOfFilterApplied(), is(1)),
-				seeThat(isEbayFilterApplied(sizeFilter)));
+		and(ricardo).attemptsTo(filterByEbayFilter(sizeFilter));
+		then(ricardo).should(eventually(seeThat(totalResultsInPage(), containsString(searchKeyWord))),
+				seeThat(numberOfFilterApplied(), is(1)), seeThat(isEbayFilterApplied(sizeFilter)));
 	}
+
 	@Test
 	public void filter_results_by_brand_and_size() {
 		givenThat(ricardo).wasAbleTo(openTheApplication());
 		when(ricardo).attemptsTo(Search.forTheTerm(searchKeyWord));
-		and(ricardo).attemptsTo(
-				filterByEbayFilter(brandFilter), 
-				filterByEbayFilter(sizeFilter));
-		then(ricardo).should(eventually(
-				seeThat(totalResultsInPage(), containsString(searchKeyWord))),
-				seeThat(numberOfFilterApplied(), is(2)), 
-				seeThat(isEbayFilterApplied(brandFilter)),
+		and(ricardo).attemptsTo(filterByEbayFilter(brandFilter), filterByEbayFilter(sizeFilter));
+		then(ricardo).should(eventually(seeThat(totalResultsInPage(), containsString(searchKeyWord))),
+				seeThat(numberOfFilterApplied(), is(2)), seeThat(isEbayFilterApplied(brandFilter)),
 				seeThat(isEbayFilterApplied(sizeFilter)));
 	}
 }
