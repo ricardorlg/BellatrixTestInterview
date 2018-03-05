@@ -53,13 +53,13 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 0.428571],
+                ['Passing', 1],
                 
                 ['Pending', 0],
                 
                 ['Ignored/Skipped', 0],
                 
-                ['Failing', 0.571429],
+                ['Failing', 0],
                 
                 ['Errors',  0],
                 ['Compromised',  0]
@@ -92,10 +92,10 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '3 / 7 tests passed' },
+                {label: '7 / 7 tests passed' },
                 {label: '0 / 7 tests pending'},
                 {label: '0 / 7 tests not executed'},
-                {label: '4 / 7 tests failed'},
+                {label: '0 / 7 tests failed'},
                 {label: '0 / 7 errors'},
                 {label: '0 / 7 compromised tests'}
             ]
@@ -103,13 +103,13 @@
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 0.418919],
+                ['Passing', 1],
                 
                 ['Pending', 0],
                 
                 ['Ignored', 0],
                 
-                ['Failing', 0.581081],
+                ['Failing', 0],
                 
                 ['Errors', 0],
                 ['Compromised', 0],
@@ -143,10 +143,10 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '3 / 7 tests passed (0.418919% of all test steps)' },
+                {label: '7 / 7 tests passed (1% of all test steps)' },
                 {label: '0 / 7 tests pending'},
                 {label: '0 / 7 tests not executed'},
-                {label: '4 / 7 tests failed (0.581081% of all test steps)'},
+                {label: '0 / 7 tests failed (0% of all test steps)'},
                 {label: '0 / 7 errors (0% of all test steps)'}
             ]
         });
@@ -216,7 +216,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-03-2018 09:32</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-03-2018 16:55</span>
     <br style="clear:left"/>
 </div>
 <div class="clr"></div>
@@ -235,24 +235,10 @@
                 <div>
 
                     <span class="test-count"> |
-                        3
+                        7
                             <a href="01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html">passed</a>
                         
                     </span>
-                    <span class="test-count"> |
-                        4
-                            <a href="b964a040ccee2192880812cc5de2c4d0075e3288c1b298b7dda0839367bb26be.html">unsuccessful</a>
-                        
-                    </span>(
-                    <span class="test-count">
-                        4
-                            <a href="da5b0c51b332adf0ef993a9f086d6a1b51a3d800248ec6ae281212092f35bd37.html">failed</a>
-                        ,
-                    </span>
-                    <span class="test-count">
-                        0
-errors
-                    </span>)
 
                 
 
@@ -304,8 +290,8 @@ errors
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>7</td>
-            <td>3 (43%)</td>
-            <td>4 (57%)</td>
+            <td>7 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -320,14 +306,14 @@ errors
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>7</td>
-            <td>3 (43%)</td>
-            <td>4 (57%)</td>
+            <td>7 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">3 minutes 59 seconds</td>
+                <td colspan="5">5 minutes 28 seconds</td>
         </tr>
         </body>
     </table>
@@ -349,7 +335,7 @@ errors
             </tr>
                 <tr>
                     <td class="bluetext tag-title">
-                        <span class="FAILURE-text truncated-tag-title">
+                        <span class="SUCCESS-text truncated-tag-title">
                                 <a href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html" title="Chrome">Chrome</a>
                         </span>
                     </td>
@@ -358,7 +344,7 @@ errors
 
                         <table>
                             <tr>
-                                <td class="related-tag-percentage"><span title="3 out of 7 tests (31 steps) passing">42.9%</span></td>
+                                <td class="related-tag-percentage"><span title="7 out of 7 tests (78 steps) passing">100%</span></td>
                                 <td width="150px">
                                     <a href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">
                                         <div class="pendingbar"
@@ -375,10 +361,10 @@ errors
                                                          title="0 out of 7 tests (0 steps) broken">
                                                         <div class="failingbar"
                                                              style="width: 150px;"
-                                                             title="4 out of 7 tests (43 steps) failing">
+                                                             title="0 out of 7 tests (0 steps) failing">
                                                             <div class="passingbar"
-                                                                 style="width: 64px;"
-                                                                 title="3 out of 7 tests (31 steps) passing">
+                                                                 style="width: 150px;"
+                                                                 title="7 out of 7 tests (78 steps) passing">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -435,8 +421,8 @@ errors
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>7</td>
-            <td>3 (43%)</td>
-            <td>4 (57%)</td>
+            <td>7 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -451,14 +437,14 @@ errors
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>7</td>
-            <td>3 (43%)</td>
-            <td>4 (57%)</td>
+            <td>7 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">3 minutes 59 seconds</td>
+                <td colspan="5">5 minutes 28 seconds</td>
         </tr>
         </body>
     </table>
@@ -480,7 +466,7 @@ errors
             </tr>
                 <tr>
                     <td class="bluetext tag-title">
-                        <span class="FAILURE-text truncated-tag-title">
+                        <span class="SUCCESS-text truncated-tag-title">
                                 <a href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html" title="Chrome">Chrome</a>
                         </span>
                     </td>
@@ -489,7 +475,7 @@ errors
 
                         <table>
                             <tr>
-                                <td class="related-tag-percentage"><span title="3 out of 7 tests (31 steps) passing">41.9%</span></td>
+                                <td class="related-tag-percentage"><span title="7 out of 7 tests (78 steps) passing">100%</span></td>
                                 <td width="150px">
                                     <a href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">
                                         <div class="pendingbar"
@@ -506,10 +492,10 @@ errors
                                                          title="0 out of 7 tests (0 steps) broken">
                                                         <div class="failingbar"
                                                              style="width: 150px;"
-                                                             title="4 out of 7 tests (43 steps) failing">
+                                                             title="0 out of 7 tests (0 steps) failing">
                                                             <div class="passingbar"
-                                                                 style="width: 63px;"
-                                                                 title="3 out of 7 tests (31 steps) passing">
+                                                                 style="width: 150px;"
+                                                                 title="7 out of 7 tests (78 steps) passing">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -554,73 +540,73 @@ errors
                         </thead>
                         <tbody>
 
-                            <tr class="test-FAILURE">
-                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                                     
-                                    <span style="display:none">FAILURE</span></td>
-                                <td class="FAILURE-text">
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
                                         <a href="1eedd864da5d38905e06da39de7afd4cd4bc75a8a578963122ede89698621efa.html" class="ellipsis"
-                                           title="Filter results by brand No matching filter option is visible:...">
+                                           title="Filter results by brand ">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Filter results by brand
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="FAILURE-text">8</td>
+                                <td class="SUCCESS-text">9</td>
 
 
-                                <td class="FAILURE-text" data-sort="2018-03-02 09:30:15">09:30:15</td>
+                                <td class="SUCCESS-text" data-sort="2018-03-05 16:52:35">16:52:35</td>
 
-                                <td class="FAILURE-text">40.96</td>
+                                <td class="SUCCESS-text">96.25</td>
                             </tr>
 
-                            <tr class="test-FAILURE">
-                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                                     
-                                    <span style="display:none">FAILURE</span></td>
-                                <td class="FAILURE-text">
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
                                         <a href="8746d8db6d0fea74600dd4175d1626742ffdfc7b30a8a6f176d4d7019f5a2421.html" class="ellipsis"
-                                           title="Filter results by size No matching filter option is visible:...">
+                                           title="Filter results by size ">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Filter results by size
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="FAILURE-text">8</td>
+                                <td class="SUCCESS-text">9</td>
 
 
-                                <td class="FAILURE-text" data-sort="2018-03-02 09:30:57">09:30:57</td>
+                                <td class="SUCCESS-text" data-sort="2018-03-05 16:54:12">16:54:12</td>
 
-                                <td class="FAILURE-text">18.64</td>
+                                <td class="SUCCESS-text">16.27</td>
                             </tr>
 
-                            <tr class="test-FAILURE">
-                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                                     
-                                    <span style="display:none">FAILURE</span></td>
-                                <td class="FAILURE-text">
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
                                         <a href="6a3d2fb95fd393fa28fc1bdd7732c239a0519d215f71e4ef54e27483add3c18e.html" class="ellipsis"
-                                           title="Filter results by brand and size No matching filter option is visible:...">
+                                           title="Filter results by brand and size ">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Filter results by brand and size
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="FAILURE-text">11</td>
+                                <td class="SUCCESS-text">12</td>
 
 
-                                <td class="FAILURE-text" data-sort="2018-03-02 09:31:16">09:31:16</td>
+                                <td class="SUCCESS-text" data-sort="2018-03-05 16:54:29">16:54:29</td>
 
-                                <td class="FAILURE-text">22.28</td>
+                                <td class="SUCCESS-text">18.26</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -641,9 +627,9 @@ errors
                                 <td class="SUCCESS-text">5</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-02 09:30:15">09:30:15</td>
+                                <td class="SUCCESS-text" data-sort="2018-03-05 16:52:36">16:52:36</td>
 
-                                <td class="SUCCESS-text">32.35</td>
+                                <td class="SUCCESS-text">25.89</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -664,9 +650,9 @@ errors
                                 <td class="SUCCESS-text">13</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-02 09:30:15">09:30:15</td>
+                                <td class="SUCCESS-text" data-sort="2018-03-05 16:52:35">16:52:35</td>
 
-                                <td class="SUCCESS-text">60.39</td>
+                                <td class="SUCCESS-text">90.54</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -687,32 +673,32 @@ errors
                                 <td class="SUCCESS-text">13</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-02 09:31:16">09:31:16</td>
+                                <td class="SUCCESS-text" data-sort="2018-03-05 16:54:06">16:54:06</td>
 
-                                <td class="SUCCESS-text">39.28</td>
+                                <td class="SUCCESS-text">41.63</td>
                             </tr>
 
-                            <tr class="test-FAILURE">
-                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                                     
-                                    <span style="display:none">FAILURE</span></td>
-                                <td class="FAILURE-text">
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
                                         <a href="8e88f0e1686403349b51d629f14a6e4f03953fac02ba7a7cef8e86e0d2ea811d.html" class="ellipsis"
-                                           title="Order filter results No matching filter option is visible:...">
+                                           title="Order filter results ">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Order filter results
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="FAILURE-text">16</td>
+                                <td class="SUCCESS-text">17</td>
 
 
-                                <td class="FAILURE-text" data-sort="2018-03-02 09:31:55">09:31:55</td>
+                                <td class="SUCCESS-text" data-sort="2018-03-05 16:54:48">16:54:48</td>
 
-                                <td class="FAILURE-text">25.52</td>
+                                <td class="SUCCESS-text">39.65</td>
                             </tr>
                         </tbody>
                     </table>
