@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Filter products story","Filter results by brand","ERROR","2019-07-22T11:04:04.551Z[UTC]","0.0","47.35"
+"Filter products story","Filter results by size","ERROR","2019-07-22T11:04:52.745Z[UTC]","0.0","29.93"
+"Filter products story","Filter results by brand and size","ERROR","2019-07-22T11:05:22.762Z[UTC]","0.0","35.55"
+"Search products story","Search results should show the search term in the results text","ERROR","2019-07-22T11:04:04.564Z[UTC]","0.0","37.67"

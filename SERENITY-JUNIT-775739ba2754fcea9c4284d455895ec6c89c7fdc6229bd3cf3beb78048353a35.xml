@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="com.example.bellatrix.interview.ricardo.features.sort_results.SortResultsStory" skipped="0" tests="3" time="171.82" timestamp="2018-03-05T16:52:35.777Z[UTC]"><testcase classname="com.example.bellatrix.interview.ricardo.features.sort_results.SortResultsStory" name="Order results by descendant price"/><testcase classname="com.example.bellatrix.interview.ricardo.features.sort_results.SortResultsStory" name="Order results by ascendant price"/><testcase classname="com.example.bellatrix.interview.ricardo.features.sort_results.SortResultsStory" name="Order filter results"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="3" name="com.example.bellatrix.interview.ricardo.features.sort_results.SortResultsStory" skipped="0" tests="3" time="107.89" timestamp="2019-07-22T11:04:04.535Z[UTC]"><testcase classname="com.example.bellatrix.interview.ricardo.features.sort_results.SortResultsStory" name="Order results by descendant price"><failure message="&#10;Expected: an element that is visible&#10;     but: no matching element found by id: viewType was not visible" type="java.lang.AssertionError">
+Expected: an element that is visible
+     but: no matching element found by id: viewType was not visible</failure><system-err>
+Expected: an element that is visible
+     but: no matching element found by id: viewType was not visible
+com.example.bellatrix.interview.ricardo.features.sort_results.SortResultsStory.order_results_by_descendant_price(SortResultsStory.java:63)
+</system-err></testcase><testcase classname="com.example.bellatrix.interview.ricardo.features.sort_results.SortResultsStory" name="Order results by ascendant price"><failure message="&#10;Expected: an element that is visible&#10;     but: no matching element found by id: viewType was not visible" type="java.lang.AssertionError">
+Expected: an element that is visible
+     but: no matching element found by id: viewType was not visible</failure><system-err>
+Expected: an element that is visible
+     but: no matching element found by id: viewType was not visible
+com.example.bellatrix.interview.ricardo.features.sort_results.SortResultsStory.order_results_by_ascendant_price(SortResultsStory.java:54)
+</system-err></testcase><testcase classname="com.example.bellatrix.interview.ricardo.features.sort_results.SortResultsStory" name="Order filter results"><failure message="&#10;Expected: an element that is visible&#10;     but: no matching element found by id: viewType was not visible" type="java.lang.AssertionError">
+Expected: an element that is visible
+     but: no matching element found by id: viewType was not visible</failure><system-err>
+Expected: an element that is visible
+     but: no matching element found by id: viewType was not visible
+com.example.bellatrix.interview.ricardo.features.sort_results.SortResultsStory.order_filter_results(SortResultsStory.java:70)
+</system-err></testcase></testsuite>

@@ -49,10 +49,10 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 3],
+                ['Passing', 0],
                 ['Pending', 0],
                 ['Ignored', 0],
-                ['Failing', 0],
+                ['Failing', 3],
                 ['Errors',  0],
                 ['Compromised',  0],
                 ['Untested',  0],
@@ -82,10 +82,10 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '3 requirements tested successfully'},
+                {label: '0 requirements tested successfully'},
                 {label: '0 requirements pending'},
                 {label: '0} requirements skipped'},
-                {label: '0} requirements with failures'},
+                {label: '3} requirements with failures'},
                 {label: '0} requirements with errors'},
                 {label: '0} requirements compromised'},
                 {label: '0} requirements untested'},
@@ -186,7 +186,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-03-2018 16:52</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-07-2019 11:04</span>
     <br style="clear:left"/>
 </div>
 
@@ -225,8 +225,8 @@
                                     <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria
                                         (tests)</a></td>
                                     <td>3</td>
-                                    <td>3</td>
                                     <td>0</td>
+                                    <td>3</td>
                                     <td>0</td>
                                     <td>0</td>
                                     <td></td>
@@ -256,8 +256,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>3</td>
-            <td>3 (100%)</td>
             <td>0 (0%)</td>
+            <td>3 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -272,14 +272,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>3</td>
-            <td>3 (100%)</td>
             <td>0 (0%)</td>
+            <td>3 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">2 minutes 51 seconds</td>
+                <td colspan="5">1 minutes 47 seconds</td>
         </tr>
         </body>
     </table>
@@ -307,73 +307,73 @@
                         </thead>
                         <tbody>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
                                     <div class="ellipsis">
 
                                         <a href="775739ba2754fcea9c4284d455895ec6c89c7fdc6229bd3cf3beb78048353a35.html" class="ellipsis"
-                                           title="Order results by descendant price ">
+                                           title="Order results by descendant price Assertion error: Expected: an element...">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Order results by descendant price
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">13</td>
+                                <td class="FAILURE-text">12</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-05 16:52:35">16:52:35</td>
+                                <td class="FAILURE-text" data-sort="2019-07-22 11:04:04">11:04:04</td>
 
-                                <td class="SUCCESS-text">90.54</td>
+                                <td class="FAILURE-text">45.1</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
                                     <div class="ellipsis">
 
                                         <a href="d45ec3d8141bd7a5793d47c230f8fddd455407d7b68a0a28966118f73e7e9985.html" class="ellipsis"
-                                           title="Order results by ascendant price ">
+                                           title="Order results by ascendant price Assertion error: Expected: an element...">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Order results by ascendant price
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">13</td>
+                                <td class="FAILURE-text">12</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-05 16:54:06">16:54:06</td>
+                                <td class="FAILURE-text" data-sort="2019-07-22 11:04:50">11:04:50</td>
 
-                                <td class="SUCCESS-text">41.63</td>
+                                <td class="FAILURE-text">31.53</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
                                     <div class="ellipsis">
 
                                         <a href="8e88f0e1686403349b51d629f14a6e4f03953fac02ba7a7cef8e86e0d2ea811d.html" class="ellipsis"
-                                           title="Order filter results ">
+                                           title="Order filter results Assertion error: Expected: an element...">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Order filter results
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">17</td>
+                                <td class="FAILURE-text">16</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-05 16:54:48">16:54:48</td>
+                                <td class="FAILURE-text" data-sort="2019-07-22 11:05:21">11:05:21</td>
 
-                                <td class="SUCCESS-text">39.65</td>
+                                <td class="FAILURE-text">31.26</td>
                             </tr>
                         </tbody>
                     </table>

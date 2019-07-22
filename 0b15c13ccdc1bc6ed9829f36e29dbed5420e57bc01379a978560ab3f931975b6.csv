@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Sort results story","Order results by descendant price","SUCCESS","2018-03-05T16:52:35.777Z[UTC]","0.0","90.54"
-"Sort results story","Order results by ascendant price","SUCCESS","2018-03-05T16:54:06.823Z[UTC]","0.0","41.63"
-"Sort results story","Order filter results","SUCCESS","2018-03-05T16:54:48.52Z[UTC]","0.0","39.65"
+"Sort results story","Order results by descendant price","FAILURE","2019-07-22T11:04:04.535Z[UTC]","0.0","45.1"
+"Sort results story","Order results by ascendant price","FAILURE","2019-07-22T11:04:50.319Z[UTC]","0.0","31.53"
+"Sort results story","Order filter results","FAILURE","2019-07-22T11:05:21.921Z[UTC]","0.0","31.26"

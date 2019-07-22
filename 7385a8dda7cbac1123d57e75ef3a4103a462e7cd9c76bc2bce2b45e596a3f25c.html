@@ -53,13 +53,13 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 
                 ['Pending', 0],
                 
                 ['Ignored/Skipped', 0],
                 
-                ['Failing', 0],
+                ['Failing', 1],
                 
                 ['Errors',  0],
                 ['Compromised',  0]
@@ -92,10 +92,10 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '3 / 3 tests passed' },
+                {label: '0 / 3 tests passed' },
                 {label: '0 / 3 tests pending'},
                 {label: '0 / 3 tests not executed'},
-                {label: '0 / 3 tests failed'},
+                {label: '3 / 3 tests failed'},
                 {label: '0 / 3 errors'},
                 {label: '0 / 3 compromised tests'}
             ]
@@ -103,13 +103,13 @@
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 
                 ['Pending', 0],
                 
                 ['Ignored', 0],
                 
-                ['Failing', 0],
+                ['Failing', 1],
                 
                 ['Errors', 0],
                 ['Compromised', 0],
@@ -143,10 +143,10 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '3 / 3 tests passed (1% of all test steps)' },
+                {label: '0 / 3 tests passed (0% of all test steps)' },
                 {label: '0 / 3 tests pending'},
                 {label: '0 / 3 tests not executed'},
-                {label: '0 / 3 tests failed (0% of all test steps)'},
+                {label: '3 / 3 tests failed (1% of all test steps)'},
                 {label: '0 / 3 errors (0% of all test steps)'}
             ]
         });
@@ -219,7 +219,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-03-2018 16:55</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-07-2019 11:06</span>
     <br style="clear:left"/>
 </div>
 <div class="clr"></div>
@@ -239,9 +239,18 @@
 
                     <span class="test-count"> |
                         3
-                            <a href="0fdfa98dd4bf456c6aeaf6c3af07cc770fc70ccc589056d6e6ced91ad0027cef.html">passed</a>
+                            <a href="3594331401f25f989122559a6b7007a5b3bfa3c91e73b1216398ada051ecc522.html">unsuccessful</a>
                         
+                    </span>(
+                    <span class="test-count">
+                        3
+                            <a href="0c281f0ad1d21b01a6487d3cc389f6a138922576270d073bab8a425956d6b2f6.html">failed</a>
+                        ,
                     </span>
+                    <span class="test-count">
+                        0
+errors
+                    </span>)
 
                 
 
@@ -293,8 +302,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>3</td>
-            <td>3 (100%)</td>
             <td>0 (0%)</td>
+            <td>3 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -309,14 +318,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>3</td>
-            <td>3 (100%)</td>
             <td>0 (0%)</td>
+            <td>3 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">2 minutes 51 seconds</td>
+                <td colspan="5">1 minutes 47 seconds</td>
         </tr>
         </body>
     </table>
@@ -338,7 +347,7 @@
             </tr>
                 <tr>
                     <td class="bluetext tag-title">
-                        <span class="SUCCESS-text truncated-tag-title">
+                        <span class="FAILURE-text truncated-tag-title">
                                 <a href="4e101fe0846488885630557bc8605ecd068753fa0d7c9efc00882f23011ade46.html" title="Chrome">Chrome</a>
                         </span>
                     </td>
@@ -347,7 +356,7 @@
 
                         <table>
                             <tr>
-                                <td class="related-tag-percentage"><span title="3 out of 3 tests (43 steps) passing">100%</span></td>
+                                <td class="related-tag-percentage"><span title="0 out of 3 tests (0 steps) passing">0%</span></td>
                                 <td width="150px">
                                     <a href="4e101fe0846488885630557bc8605ecd068753fa0d7c9efc00882f23011ade46.html">
                                         <div class="pendingbar"
@@ -364,10 +373,10 @@
                                                          title="0 out of 3 tests (0 steps) broken">
                                                         <div class="failingbar"
                                                              style="width: 150px;"
-                                                             title="0 out of 3 tests (0 steps) failing">
+                                                             title="3 out of 3 tests (40 steps) failing">
                                                             <div class="passingbar"
-                                                                 style="width: 150px;"
-                                                                 title="3 out of 3 tests (43 steps) passing">
+                                                                 style="width: 0px;"
+                                                                 title="0 out of 3 tests (0 steps) passing">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -391,7 +400,7 @@
                     <table>
                         <tr>
                             <td colspan="2">
-                                <span class="caption">Test results weighted by test size in steps (average steps per test: 14) .</span>
+                                <span class="caption">Test results weighted by test size in steps (average steps per test: 13) .</span>
                                 <span class="togglePieChart" id="toggleWeightedPieChart"><a href="#">Show/Hide Pie
                                     Chart</a></span>
                             </td>
@@ -424,8 +433,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>3</td>
-            <td>3 (100%)</td>
             <td>0 (0%)</td>
+            <td>3 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -440,14 +449,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>3</td>
-            <td>3 (100%)</td>
             <td>0 (0%)</td>
+            <td>3 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">2 minutes 51 seconds</td>
+                <td colspan="5">1 minutes 47 seconds</td>
         </tr>
         </body>
     </table>
@@ -469,7 +478,7 @@
             </tr>
                 <tr>
                     <td class="bluetext tag-title">
-                        <span class="SUCCESS-text truncated-tag-title">
+                        <span class="FAILURE-text truncated-tag-title">
                                 <a href="4e101fe0846488885630557bc8605ecd068753fa0d7c9efc00882f23011ade46.html" title="Chrome">Chrome</a>
                         </span>
                     </td>
@@ -478,7 +487,7 @@
 
                         <table>
                             <tr>
-                                <td class="related-tag-percentage"><span title="3 out of 3 tests (43 steps) passing">100%</span></td>
+                                <td class="related-tag-percentage"><span title="0 out of 3 tests (0 steps) passing">0%</span></td>
                                 <td width="150px">
                                     <a href="4e101fe0846488885630557bc8605ecd068753fa0d7c9efc00882f23011ade46.html">
                                         <div class="pendingbar"
@@ -495,10 +504,10 @@
                                                          title="0 out of 3 tests (0 steps) broken">
                                                         <div class="failingbar"
                                                              style="width: 150px;"
-                                                             title="0 out of 3 tests (0 steps) failing">
+                                                             title="3 out of 3 tests (40 steps) failing">
                                                             <div class="passingbar"
-                                                                 style="width: 150px;"
-                                                                 title="3 out of 3 tests (43 steps) passing">
+                                                                 style="width: 0px;"
+                                                                 title="0 out of 3 tests (0 steps) passing">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -543,73 +552,73 @@
                         </thead>
                         <tbody>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
                                     <div class="ellipsis">
 
                                         <a href="775739ba2754fcea9c4284d455895ec6c89c7fdc6229bd3cf3beb78048353a35.html" class="ellipsis"
-                                           title="Order results by descendant price ">
+                                           title="Order results by descendant price Assertion error: Expected: an element...">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Order results by descendant price
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">13</td>
+                                <td class="FAILURE-text">12</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-05 16:52:35">16:52:35</td>
+                                <td class="FAILURE-text" data-sort="2019-07-22 11:04:04">11:04:04</td>
 
-                                <td class="SUCCESS-text">90.54</td>
+                                <td class="FAILURE-text">45.1</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
                                     <div class="ellipsis">
 
                                         <a href="d45ec3d8141bd7a5793d47c230f8fddd455407d7b68a0a28966118f73e7e9985.html" class="ellipsis"
-                                           title="Order results by ascendant price ">
+                                           title="Order results by ascendant price Assertion error: Expected: an element...">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Order results by ascendant price
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">13</td>
+                                <td class="FAILURE-text">12</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-05 16:54:06">16:54:06</td>
+                                <td class="FAILURE-text" data-sort="2019-07-22 11:04:50">11:04:50</td>
 
-                                <td class="SUCCESS-text">41.63</td>
+                                <td class="FAILURE-text">31.53</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
                                     <div class="ellipsis">
 
                                         <a href="8e88f0e1686403349b51d629f14a6e4f03953fac02ba7a7cef8e86e0d2ea811d.html" class="ellipsis"
-                                           title="Order filter results ">
+                                           title="Order filter results Assertion error: Expected: an element...">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Order filter results
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">17</td>
+                                <td class="FAILURE-text">16</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-05 16:54:48">16:54:48</td>
+                                <td class="FAILURE-text" data-sort="2019-07-22 11:05:21">11:05:21</td>
 
-                                <td class="SUCCESS-text">39.65</td>
+                                <td class="FAILURE-text">31.26</td>
                             </tr>
                         </tbody>
                     </table>

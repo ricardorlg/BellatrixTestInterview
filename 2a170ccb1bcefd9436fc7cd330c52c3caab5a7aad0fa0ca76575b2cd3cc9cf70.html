@@ -49,11 +49,11 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 3],
+                ['Passing', 0],
                 ['Pending', 0],
                 ['Ignored', 0],
                 ['Failing', 0],
-                ['Errors',  0],
+                ['Errors',  3],
                 ['Compromised',  0],
                 ['Untested',  0],
             ]
@@ -82,11 +82,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '3 requirements tested successfully'},
+                {label: '0 requirements tested successfully'},
                 {label: '0 requirements pending'},
                 {label: '0} requirements skipped'},
                 {label: '0} requirements with failures'},
-                {label: '0} requirements with errors'},
+                {label: '3} requirements with errors'},
                 {label: '0} requirements compromised'},
                 {label: '0} requirements untested'},
             ]
@@ -186,7 +186,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-03-2018 16:52</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-07-2019 11:04</span>
     <br style="clear:left"/>
 </div>
 
@@ -225,8 +225,8 @@
                                     <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria
                                         (tests)</a></td>
                                     <td>3</td>
-                                    <td>3</td>
                                     <td>0</td>
+                                    <td>3</td>
                                     <td>0</td>
                                     <td>0</td>
                                     <td></td>
@@ -256,8 +256,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>3</td>
-            <td>3 (100%)</td>
             <td>0 (0%)</td>
+            <td>3 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -272,14 +272,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>3</td>
-            <td>3 (100%)</td>
             <td>0 (0%)</td>
+            <td>3 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">2 minutes 10 seconds</td>
+                <td colspan="5">1 minutes 52 seconds</td>
         </tr>
         </body>
     </table>
@@ -307,73 +307,73 @@
                         </thead>
                         <tbody>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="1eedd864da5d38905e06da39de7afd4cd4bc75a8a578963122ede89698621efa.html" class="ellipsis"
-                                           title="Filter results by brand ">
+                                           title="Filter results by brand No such element exception: Expected c...">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Filter results by brand
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">9</td>
+                                <td class="ERROR-text">8</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-05 16:52:35">16:52:35</td>
+                                <td class="ERROR-text" data-sort="2019-07-22 11:04:04">11:04:04</td>
 
-                                <td class="SUCCESS-text">96.25</td>
+                                <td class="ERROR-text">47.35</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="8746d8db6d0fea74600dd4175d1626742ffdfc7b30a8a6f176d4d7019f5a2421.html" class="ellipsis"
-                                           title="Filter results by size ">
+                                           title="Filter results by size No such element exception: Expected c...">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Filter results by size
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">9</td>
+                                <td class="ERROR-text">8</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-05 16:54:12">16:54:12</td>
+                                <td class="ERROR-text" data-sort="2019-07-22 11:04:52">11:04:52</td>
 
-                                <td class="SUCCESS-text">16.27</td>
+                                <td class="ERROR-text">29.93</td>
                             </tr>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="6a3d2fb95fd393fa28fc1bdd7732c239a0519d215f71e4ef54e27483add3c18e.html" class="ellipsis"
-                                           title="Filter results by brand and size ">
+                                           title="Filter results by brand and size No such element exception: Expected c...">
                                             <i class="fa fa-chrome" aria-hidden="true"></i> | Filter results by brand and size
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">12</td>
+                                <td class="ERROR-text">11</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2018-03-05 16:54:29">16:54:29</td>
+                                <td class="ERROR-text" data-sort="2019-07-22 11:05:22">11:05:22</td>
 
-                                <td class="SUCCESS-text">18.26</td>
+                                <td class="ERROR-text">35.55</td>
                             </tr>
                         </tbody>
                     </table>
